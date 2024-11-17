@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Ladder Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Word Ladder Game</h1>
+    <p>Change one letter at a time to reach the target word!</p>
+  </header>
+  <main>
+    <div id="game">
+      <h2>Level: <span id="level">Easy</span></h2>
+      <p><strong>Start Word:</strong> <span id="start-word">cat</span></p>
+      <p><strong>Target Word:</strong> <span id="end-word">dog</span></p>
+      <p><strong>Timer:</strong> <span id="timer">60</span> seconds</p>
+      <p><strong>Score:</strong> <span id="score">0</span> points</p>
+      <input type="text" id="input-word" placeholder="Enter a word" />
+      <button id="submit-word">Submit</button>
+      <p id="message"></p>
+    </div>
+    <div id="controls">
+      <button onclick="setLevel('easy')">Easy</button>
+      <button onclick="setLevel('medium')">Medium</button>
+      <button onclick="setLevel('hard')">Hard</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Word Ladder Game</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
